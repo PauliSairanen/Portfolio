@@ -1,10 +1,16 @@
-
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div className="App">
-      <p>This will be my portfolio webpage!</p>
-    </div>
+    <main>
+      <Switch>
+        <Route path='/' component={} exact />
+        <Route path='/about' component={About} />
+        <Route path='/portfolio' component={Portfolio} />
+        <Route path='/contact' component={Contact} />
+      </Switch>
+    </main>
   );
 }
 
