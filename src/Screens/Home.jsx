@@ -1,14 +1,12 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-
 import { StyleSheet, css } from 'aphrodite'
 
 const Home = () => {
   return (
     <div className={css(styles.contentContainer)}>
-
       <div class='row'>
-        <div class='col-lg-5'>
+        <div class='col-lg-6 container'>
           <div>
             <p className={css(styles.hello)}>— HELLO</p>
           </div>
@@ -25,19 +23,13 @@ const Home = () => {
           </div>
           <Button class='btn btn-lg' className={css(styles.button)}>View my work!</Button>
         </div>
-        <div class='col-lg-5' className={{ border: 'solid, white 1px' }}>
-
-          {/* <img src='/images/promotion_image.png' alt="" className={css(styles.image)} /> */}
-
+        <div class='col-lg-6 container' >
           <div className={css(styles.imageContainer)}>
             <div className={css(styles.image)}></div>
           </div>
-
         </div>
-
       </div>
     </div>
-
   )
 }
 
@@ -46,41 +38,41 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    margin: '10%'
+    padding: '10%'
   },
   hello: {
-    fontSize: '30px',
+    fontSize: '55px',
     color: '#ffca58',
     fontFamily: 'Meiryo',
     fontWeight: 'bold'
   },
   mainName: {
-    fontSize: '40px',
+    fontSize: '45px',
     fontFamily: 'Roboto',
     fontWeight: '500',
     color: '#ffca58',
   },
   name: {
-    fontSize: '40px',
+    fontSize: '45px',
     fontFamily: 'Roboto',
     fontWeight: '500',
     color: 'white',
   },
   text: {
-    fontSize: '20px',
+    fontSize: '25px',
     fontFamily: 'Roboto',
     fontWeight: '400',
     color: 'white',
   },
   nameInText: {
-    fontSize: '20px',
+    fontSize: '25px',
     fontFamily: 'Roboto',
     fontWeight: '400',
     color: '#ffca58',
   },
   imageContainer: {
-    height: '700px',
-    width: '700px',
+    width: '60vh',
+    height: '60vh',
   },
   image: {
     width: '100%',
@@ -89,17 +81,19 @@ const styles = StyleSheet.create({
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     borderRadius: '50%',
-    border: 'solid white 2px',
+    border: 'solid white 3px',
   },
-
   button: {
+    width: '30w%',
+    height: '10%',
     flex: 1,
     justifyContent: 'center',
     margin: '10%',
     backgroundColor: '#ffca58',
     color: 'black',
     fontFamily: 'Meiryo',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    fontSize: '20px'
   }
 })
 
